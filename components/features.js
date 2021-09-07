@@ -10,11 +10,8 @@ const Feature = ({ text, icon }) => (
 );
 
 const TITLE_WITH_TRANSLATIONS = {
-  "en-US": "React Hooks for Data Fetching",
-  "es-ES": "Biblioteca React Hooks para la obtención de datos",
-  "zh-CN": "用于数据请求的 React Hooks 库",
-  ja: "データ取得のための React Hooks ライブラリ",
-  ko: "데이터 가져오기를 위한 React Hooks",
+  "en-US": "iOS & Android App Templates",
+  "el-GR": "Εφαρμογές για iOS & Android",
 };
 
 export default () => {
@@ -46,7 +43,7 @@ export default () => {
             }
           />
           <Feature
-            text="Backend Agnostic"
+            text="Backend Data"
             icon={
               <svg
                 viewBox="0 0 24 24"
@@ -72,7 +69,7 @@ export default () => {
         </div>
         <div>
           <Feature
-            text="Realtime"
+            text="Realtime Database"
             icon={
               <svg
                 width="24"
@@ -90,7 +87,7 @@ export default () => {
             }
           />
           <Feature
-            text="SSR / ISR / SSG Ready"
+            text="Data Storage"
             icon={
               <svg
                 width="24"
@@ -110,7 +107,7 @@ export default () => {
         </div>
         <div>
           <Feature
-            text="Suspense"
+            text="Data Analytics"
             icon={
               <svg
                 viewBox="0 0 24 24"
@@ -129,7 +126,7 @@ export default () => {
             }
           />
           <Feature
-            text="TypeScript Ready"
+            text="SwiftUI &amp; Kotlin Ready"
             icon={
               <svg
                 width="24"

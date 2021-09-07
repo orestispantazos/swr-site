@@ -19,18 +19,15 @@ const Vercel = ({ height = 20 }) => (
 );
 
 const TITLE_WITH_TRANSLATIONS = {
-  "en-US": "React Hooks for Data Fetching",
-  "zh-CN": "用于数据请求的 React Hooks 库",
-  "es-ES": "Biblioteca React Hooks para la obtención de datos",
-  ja: "データ取得のための React Hooks ライブラリ",
-  ko: "데이터 가져오기를 위한 React Hooks",
+  "en-US": "iOS & Android App Templates",
+  "el-GR": "Εφαρμογές για iOS & Android",
 };
 
 export default {
-  github: "https://github.com/vercel/swr",
+  github: "https://github.com/Apps4Devs/",
   docsRepositoryBase: "https://github.com/vercel/swr-site/blob/master/pages",
-  titleSuffix: " – SWR",
-  search: true,
+  titleSuffix: " – Apps4Devs",
+  search: false,
   unstable_stork: true,
   floatTOC: true,
   logo: () => {
@@ -39,7 +36,7 @@ export default {
       <>
         <Logo height={18} />
         <span className="mx-2 font-extrabold hidden md:inline select-none">
-          SWR
+          Apps4Devs
         </span>
         <span className="text-gray-600 font-normal hidden lg:!inline whitespace-no-wrap">
           {TITLE_WITH_TRANSLATIONS[locale]}
@@ -104,7 +101,7 @@ export default {
         <meta
           name="og:title"
           content={
-            title ? title + " – SWR" : "SWR: React Hooks for Data Fetching"
+            title ? title + " – Apps4Devs" : "Apps4Devs: iOS & Android App Templates"
           }
         />
         <meta
@@ -124,90 +121,33 @@ export default {
       </>
     );
   },
-  footerEditLink: ({ locale }) => {
-    switch (locale) {
-      case "zh-CN":
-        return "在 GitHub 上编辑本页";
-      case "es-ES":
-        return "Edite esta página en GitHub";
-      case "ja":
-        return "Github で編集する";
-      case "ko":
-        return "Github에서 이 페이지 편집하기";
-      default:
-        return "Edit this page on GitHub";
-    }
-  },
   footerText: ({ locale }) => {
     switch (locale) {
-      case "zh-CN":
+      case "el-GR":
         return (
           <a
-            href="https://vercel.com/?utm_source=swr_zh-cn"
+            href="https://opendevops.dev/"
             target="_blank"
             rel="noopener"
             className="inline-flex items-center no-underline text-current font-semibold"
           >
-            <span className="mr-2">由</span>
+            <span className="mr-2">Σχεδιάστηκε από τον</span>
             <span className="mr-2">
-              <Vercel />
-            </span>
-            驱动
-          </a>
-        );
-      case "es-ES":
-        return (
-          <a
-            href="https://vercel.com/?utm_source=swr_es-es"
-            target="_blank"
-            rel="noopener"
-            className="inline-flex items-center no-underline text-current font-semibold"
-          >
-            <span className="mr-2">Desarrollado por</span>
-            <span className="mr-2">
-              <Vercel />
-            </span>
-          </a>
-        );
-      case "ja":
-        return (
-          <a
-            href="https://vercel.com/?utm_source=swr_ja"
-            target="_blank"
-            rel="noopener"
-            className="inline-flex items-center no-underline text-current font-semibold"
-          >
-            <span className="mr-2">提供</span>
-            <span className="mr-2">
-              <Vercel />
-            </span>
-          </a>
-        );
-      case "ko":
-        return (
-          <a
-            href="https://vercel.com/?utm_source=swr_ja"
-            target="_blank"
-            rel="noopener"
-            className="inline-flex items-center no-underline text-current font-semibold"
-          >
-            <span className="mr-2">Powered by</span>
-            <span className="mr-2">
-              <Vercel />
+              Ορέστης Παντάζος
             </span>
           </a>
         );
       default:
         return (
           <a
-            href="https://vercel.com/?utm_source=swr"
+            href="https://opendevops.dev/"
             target="_blank"
             rel="noopener"
             className="inline-flex items-center no-underline text-current font-semibold"
           >
-            <span className="mr-1">Powered by</span>
+            <span className="mr-1">Developed by</span>
             <span>
-              <Vercel />
+              Orestis Pantazos
             </span>
           </a>
         );
@@ -215,9 +155,6 @@ export default {
   },
   i18n: [
     { locale: "en-US", text: "English" },
-    { locale: "es-ES", text: "Español" },
-    { locale: "zh-CN", text: "简体中文" },
-    { locale: "ja", text: "日本語" },
-    { locale: "ko", text: "한국어" },
+    { locale: "el-GR", text: "Ελληνικά" },
   ],
 };
